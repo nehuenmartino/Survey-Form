@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form for freeCodeCamp</title>
+<link rel="stylesheet" href="/survey_form.css">
+</head>
+<body>
+<div class="main">
+    <header>
+    <h1 id="title">Survey Form</h1>
+    
+    <p id="description">Please fill out the form below to contact us</p>
+    </header>
+    
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" required placeholder="Enter your name" />
+      <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" required placeholder="Enter your email" />
+      <label for="number" id="number-label">Age <span>(optional)</span></label>
+        <input id="number" type="number" required min='1' max='99' placeholder="Age" />
+    
+      <div class="form-group">
+      <p>What is your educational level?</p>
+      <select id="dropdown" name="studies" class="form-control" required>
+        <option disabled selected value>Select the highest level of studies achieved</option>
+        <option value="student">Student</option>
+        <option value="bachelor">Bachelor</option>
+        <option value="master">Master</option>
+        <option value="phd">Ph.D</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>Where did you hear about us?</p>
+      <input type="radio" name="action" id="linkedin" value="linkedin" /><label for="linkedin">Linkedin</label><br />
+      <input type="radio" name="action" id="instagram" value="instagram" /><label for="instagram">Instagram</label><br />
+      <input type="radio" name="action" id="prefer-no" value="prefer-no" /><label for="prefer-no">Prefer not to say</label><br />
+    </div>
+    
+    <div class="form-group">
+      <p>How much time can you dedicate to the course per week?</p>
+      <select id="dropdown" name="studies" class="form-control" required>
+        <option disabled selected value>Select your available time</option>
+        <option value="six">6 hours</option>
+        <option value="nine">9 hours</option>
+        <option value="twelve">12 hours</option>
+        <option value="twenty">20 hours</option>
+        <option value="more">More</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>What would you like to train in?</p>
+      <input name="prefer" value="front-end" type="checkbox" class="input-checkbox" /><label for="frontend">Front-end projects</label><br>
+      <input name="prefer" value="back-end" type="checkbox" class="input-checkbox"/><label for="backend">Back-end projects</label><br>
+      <input name="prefer" value="fullstack" type="checkbox" class="input-checkbox"/><label for="fullstack">Full-stack</label><br>
+      <input name="prefer" value="ux-ui" type="checkbox" class="input-checkbox"/><label for="ux-ui">UX/UI</label><br>
+      <input name="prefer" value="qa" type="checkbox" class="input-checkbox"/><label for="qa">Quality Assurance</label><br>
+      
+      
+    </div>
+    
+    <div class="form-group">
+        <p>Send a personalized message</p>
+        <textarea
+          id="message"
+          class="input-textarea"
+          name="message"
+          rows="4"
+          cols="50"
+          placeholder="Enter your comment here..."
+        ></textarea>
+    </div>
+    <button type="submit" id="submit">Submit</button>
+    
+    </form>    
+    
+   </div>
+    
+</body>
+</html>
